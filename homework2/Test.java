@@ -18,10 +18,10 @@ public class Test {
 		EmailAddress ea2 = new EmailAddress ("李四","韶山西路","长沙市","湖南省","中国","1002");
 		EmailAddress ea3 = new EmailAddress ("王五","韶山东路","长沙市","湖南省","中国","1003");
 
-		al1.add(ea1);
+		al1.add(ea1);		//将EmailAddress对象依次装入集合中
 		al1.add(ea2);
 		al1.add(ea3);
-		for(int i=0;i<al1.size();i++) {
+		for(int i=0;i<al1.size();i++) {	//循环输出集合中的元素
 			System.out.println(al1.get(i));
 		}
 
