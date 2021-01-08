@@ -16,12 +16,12 @@ public class Person {
 	int age;
 	float weight;
 	
-	public boolean equals(Object obj) {
-		if(obj instanceof Person) {
-			if(obj == this) {
+	public boolean equals(Object obj) {		
+		if(obj instanceof Person) {		//首先判断传入的对象是不是Person类型，若不是直接返回false
+			if(obj == this) {		//判断两个对象的地址值是否相同，若地址值相同则必定相等
 				return true;
 			}
-			Person p = (Person)obj;
+			Person p = (Person)obj;		//先将传入的对象转换成Person类型才能比较
 			if(p.name.equals(this.name)&&p.age==this.age&&p.weight==this.weight) {
 				return true;
 			}
